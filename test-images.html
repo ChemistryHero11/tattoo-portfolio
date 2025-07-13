@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Test Images</title>
+</head>
+<body>
+    <h1>Testing Cloudinary Images</h1>
+    <div id="images"></div>
+    <script>
+        fetch('http://localhost:3000/api/images')
+            .then(res => res.json())
+            .then(data => {
+                console.log('API Response:', data);
+                const container = document.getElementById('images');
+                data.images.forEach(img => {
+                    const imgEl = document.createElement('img');
+                    imgEl.src = img.src;
+                    imgEl.alt = img.alt;
+                    imgEl.style.width = '200px';
+                    imgEl.style.margin = '10px';
+                    imgEl.onerror = () => console.error('Failed to load:', img.src);
+                    imgEl.onload = () => console.log('Loaded:', img.src);
+                    container.appendChild(imgEl);
+                });
+            })
+            .catch(err => console.error('Error:', err));
+    </script>
+</body>
+</html>

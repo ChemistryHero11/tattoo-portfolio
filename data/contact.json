@@ -1,0 +1,24 @@
+{
+  "address": {
+    "street": "123 Tattoo Street",
+    "city": "Art District",
+    "state": "CA",
+    "zip": "90028"
+  },
+  "phone": "(323) 555-0123",
+  "email": "info@inkmaster.com",
+  "instagram": "inkmaster_studio",
+  "coordinates": {
+    "lat": 34.1012,
+    "lng": -118.3295
+  },
+  "hours": {
+    "monday": "Closed",
+    "tuesday": "12:00 PM - 8:00 PM",
+    "wednesday": "12:00 PM - 8:00 PM",
+    "thursday": "12:00 PM - 8:00 PM",
+    "friday": "12:00 PM - 10:00 PM",
+    "saturday": "11:00 AM - 10:00 PM",
+    "sunday": "12:00 PM - 6:00 PM"
+  }
+}

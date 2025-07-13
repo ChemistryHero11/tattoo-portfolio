@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+
+# Disallow admin area
+User-agent: *
+Disallow: /admin
+
+# Sitemap
+Sitemap: https://inkmaster.com/sitemap.xml

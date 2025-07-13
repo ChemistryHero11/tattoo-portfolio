@@ -1,0 +1,52 @@
+{
+  "categories": {
+    "general": [
+      {
+        "question": "How do I book a tattoo appointment?",
+        "answer": "You can book an appointment through our booking form on the website or by calling the studio directly. We require a consultation for all custom pieces to discuss your design, placement, and pricing. A $50 deposit is required to secure your appointment, which goes toward your final tattoo cost."
+      },
+      {
+        "question": "What should I bring to my appointment?",
+        "answer": "Please bring a valid government-issued ID (you must be 18+), any reference images for your design, and wear comfortable clothing that allows easy access to the area being tattooed. If you have any medical conditions or are taking medications, please inform us beforehand."
+      },
+      {
+        "question": "How long will my tattoo take?",
+        "answer": "Tattoo duration varies greatly depending on size, detail, and placement. Small pieces may take 1-2 hours, while large or complex designs might require multiple sessions. We'll provide a time estimate during your consultation."
+      }
+    ],
+    "pricing": [
+      {
+        "question": "How much does a tattoo cost?",
+        "answer": "Pricing depends on size, complexity, placement, and time required. Our shop minimum is $100, and hourly rate is $150-200 depending on the artist. We provide exact quotes during consultations. Remember, good tattoos aren't cheap, and cheap tattoos aren't good!"
+      },
+      {
+        "question": "Do you accept payment plans?",
+        "answer": "For larger pieces over $500, we offer payment plans. You can pay in installments as we complete each session. A 50% deposit is required before starting, with the remainder due upon completion of each session."
+      }
+    ],
+    "aftercare": [
+      {
+        "question": "How do I care for my new tattoo?",
+        "answer": "Keep the bandage on for 2-4 hours, then gently wash with unscented soap and lukewarm water. Pat dry and apply a thin layer of recommended aftercare ointment 2-3 times daily. Avoid direct sunlight, swimming, and excessive sweating for 2 weeks. Full healing typically takes 2-4 weeks."
+      },
+      {
+        "question": "Is it normal for my tattoo to peel?",
+        "answer": "Yes! Peeling and light scabbing are normal parts of the healing process, typically occurring 3-7 days after getting tattooed. Don't pick or scratch - let it heal naturally. If you notice excessive swelling, redness, or discharge, contact us immediately."
+      },
+      {
+        "question": "Can I work out after getting a tattoo?",
+        "answer": "We recommend avoiding intense physical activity for at least 48 hours after getting tattooed. Excessive sweating can interfere with healing and increase infection risk. Light exercise is okay after a few days, but avoid activities that stretch or irritate the tattooed area."
+      }
+    ],
+    "safety": [
+      {
+        "question": "What safety measures do you take?",
+        "answer": "We strictly follow all health department regulations. All needles are single-use and disposed of properly. Equipment is sterilized in an autoclave, and work surfaces are sanitized between clients. Our artists are certified in bloodborne pathogen safety and maintain the highest hygiene standards."
+      },
+      {
+        "question": "Can I get a tattoo if I'm pregnant or breastfeeding?",
+        "answer": "We don't tattoo pregnant or breastfeeding clients due to potential risks. The stress on your body and immune system changes during this time can affect healing. We're happy to schedule your appointment after you've finished breastfeeding."
+      }
+    ]
+  }
+}

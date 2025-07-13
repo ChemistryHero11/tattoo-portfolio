@@ -1,0 +1,58 @@
+{
+  "title": "Master of the Craft",
+  "artistName": "Colin Griffin",
+  "bio": "Based in Rochester, NY, I specialize in high-contrast blackwork tattoos that push the boundaries of light and shadow. My bold, dramatic style creates striking pieces that make a statement.",
+  "fullBio": "My journey into tattooing began a couple years ago in Rochester, NY, where I discovered my passion for high-contrast artwork. I specialize in creating bold, dramatic pieces that play with light and shadow to create depth and impact. My signature style focuses on strong blacks and negative space, creating tattoos that are both timeless and contemporary. Each piece is carefully crafted to complement the body's natural lines while making a powerful visual statement.",
+  "experience": "2+",
+  "clients": "200+",
+  "awards": "12",
+  "timeline": [
+    {
+      "year": "2009",
+      "title": "The Beginning",
+      "description": "Started apprenticeship at Brooklyn Ink Studio under master artist John Chen"
+    },
+    {
+      "year": "2012",
+      "title": "First Award",
+      "description": "Won Best Newcomer at the NYC Tattoo Convention"
+    },
+    {
+      "year": "2015",
+      "title": "Studio Opening",
+      "description": "Opened my first private studio in the Arts District"
+    },
+    {
+      "year": "2018",
+      "title": "International Recognition",
+      "description": "Featured artist at London Tattoo Convention and Milan Ink Festival"
+    },
+    {
+      "year": "2020",
+      "title": "Style Evolution",
+      "description": "Developed signature style blending neo-traditional with geometric elements"
+    },
+    {
+      "year": "2024",
+      "title": "Present Day",
+      "description": "Continuing to push boundaries and create meaningful art for amazing clients"
+    }
+  ],
+  "certifications": [
+    {
+      "name": "Bloodborne Pathogens Certification",
+      "issuer": "Red Cross",
+      "year": "2024"
+    },
+    {
+      "name": "Advanced Tattoo Techniques",
+      "issuer": "International Tattoo Academy",
+      "year": "2023"
+    },
+    {
+      "name": "CPR & First Aid",
+      "issuer": "American Heart Association",
+      "year": "2024"
+    }
+  ]
+}
