@@ -69,7 +69,7 @@ const CTASection = () => {
           
           <div className="animate-on-scroll opacity-0 translate-y-8 transition-all duration-1000" style={{ transitionDelay: '200ms' }}>
             <p className="text-grey-300 text-lg md:text-xl font-light leading-relaxed mb-12 max-w-2xl mx-auto">
-              Every tattoo tells a story. Let's craft yours with precision, 
+              Every tattoo tells a story. Let&apos;s craft yours with precision, 
               artistry, and a minimalist approach that stands the test of time.
             </p>
           </div>

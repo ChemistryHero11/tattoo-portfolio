@@ -183,7 +183,7 @@ const BookingForm = () => {
       {/* Status Messages */}
       {submitStatus === 'success' && (
         <div className="p-4 bg-green-500/20 border border-green-500 text-green-400 text-center">
-          Thank you! Your booking request has been sent. I'll get back to you soon.
+          Thank you! Your booking request has been sent. I&apos;ll get back to you soon.
         </div>
       )}
 

@@ -16,7 +16,7 @@ export default function BookingPage() {
           </h1>
           <div className="w-20 h-1 bg-blood-red mx-auto mb-6"></div>
           <p className="text-off-white/70 text-lg max-w-2xl mx-auto">
-            Ready to bring your tattoo vision to life? Fill out the form below and I'll get back to you within 24-48 hours.
+            Ready to bring your tattoo vision to life? Fill out the form below and I&apos;ll get back to you within 24-48 hours.
           </p>
         </div>
 

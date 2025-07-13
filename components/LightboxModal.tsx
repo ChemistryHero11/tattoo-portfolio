@@ -25,6 +25,14 @@ const LightboxModal = ({ images, currentImage, onClose }: LightboxModalProps) =>
     images.findIndex((img) => img.id === currentImage.id)
   )
 
+  const navigatePrev = () => {
+    setActiveIndex((prev) => (prev === 0 ? images.length - 1 : prev - 1))
+  }
+
+  const navigateNext = () => {
+    setActiveIndex((prev) => (prev === images.length - 1 ? 0 : prev + 1))
+  }
+
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
       if (e.key === 'Escape') onClose()
@@ -39,15 +47,8 @@ const LightboxModal = ({ images, currentImage, onClose }: LightboxModalProps) =>
       document.removeEventListener('keydown', handleKeyDown)
       document.body.style.overflow = 'unset'
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [activeIndex])
-
-  const navigatePrev = () => {
-    setActiveIndex((prev) => (prev === 0 ? images.length - 1 : prev - 1))
-  }
-
-  const navigateNext = () => {
-    setActiveIndex((prev) => (prev === images.length - 1 ? 0 : prev + 1))
-  }
 
   const activeImage = images[activeIndex]
 

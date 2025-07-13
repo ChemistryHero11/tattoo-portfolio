@@ -43,7 +43,7 @@ export default function FAQPage() {
             Still Have Questions?
           </h3>
           <p className="text-off-white/70 mb-6">
-            Don't hesitate to reach out! I'm here to help make your tattoo experience as smooth as possible.
+            Don&apos;t hesitate to reach out! I&apos;m here to help make your tattoo experience as smooth as possible.
           </p>
           <a href="/contact" className="btn-primary inline-block">
             Contact Me
