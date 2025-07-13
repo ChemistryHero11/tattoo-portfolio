@@ -80,10 +80,10 @@ export default function HeroSection() {
           }`}>
             <div className="max-w-3xl relative">
               {/* Glass morphism background */}
-              <div className="absolute inset-0 -inset-x-12 -inset-y-8 bg-black/20 backdrop-blur-sm rounded-3xl" />
-              <div className="relative z-10 p-12">
+              <div className="absolute inset-0 -inset-x-4 md:-inset-x-12 -inset-y-4 md:-inset-y-8 bg-black/20 backdrop-blur-sm rounded-2xl md:rounded-3xl" />
+              <div className="relative z-10 p-6 md:p-12">
               {/* Animated title with better visibility */}
-              <h1 className="text-6xl md:text-8xl lg:text-9xl font-light leading-[0.9] tracking-tighter mb-8 text-white">
+              <h1 className="text-4xl sm:text-6xl md:text-8xl lg:text-9xl font-light leading-[0.9] tracking-tighter mb-6 md:mb-8 text-white">
                 <span className="block overflow-hidden">
                   <span className="block animate-[slideUp_1s_ease-out_0.2s_both]">MINIMALIST</span>
                 </span>
@@ -94,7 +94,7 @@ export default function HeroSection() {
                   <span className="block animate-[slideUp_1s_ease-out_0.6s_both] opacity-80">TATTOOS</span>
                 </span>
               </h1>
-              <p className="text-lg md:text-xl text-white/90 max-w-md mb-12 leading-relaxed animate-[fadeIn_1s_ease-out_0.8s_both]">
+              <p className="text-base md:text-lg lg:text-xl text-white/90 max-w-md mb-8 md:mb-12 leading-relaxed animate-[fadeIn_1s_ease-out_0.8s_both]">
                 Where minimalist artistry meets timeless expression. 
                 Each design crafted with precision and purpose.
               </p>

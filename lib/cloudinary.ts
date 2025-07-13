@@ -48,21 +48,34 @@ function determineStyle(filename: string, tags: string[]): string {
 // User's uploaded images - These are now fetched from Cloudinary API
 const userImages: CloudinaryImage[] = []
 
+// Server-side function to get images from the API route
 export async function getCloudinaryImages(): Promise<CloudinaryImage[]> {
-  // For server-side rendering, we need to use the full URL
-  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'http://localhost:3000'
+  // In production, we need to use absolute URL for server-side fetches
+  // Try to get the URL from environment variable first
+  let apiUrl = '/api/images'
+  
+  if (process.env.VERCEL_URL) {
+    // Vercel provides this automatically
+    apiUrl = `https://${process.env.VERCEL_URL}/api/images`
+  } else if (process.env.NEXT_PUBLIC_SITE_URL) {
+    // Fallback to manual env var
+    apiUrl = `${process.env.NEXT_PUBLIC_SITE_URL}/api/images`
+  } else if (typeof window === 'undefined') {
+    // Server-side fallback
+    apiUrl = 'http://localhost:3000/api/images'
+  }
   
   try {
-    const response = await fetch(`${baseUrl}/api/images`, {
+    const response = await fetch(apiUrl, {
       next: { revalidate: 60 }, // Cache for 60 seconds
     })
     if (!response.ok) {
-      throw new Error('Failed to fetch images')
+      throw new Error(`Failed to fetch images: ${response.status}`)
     }
     const data = await response.json()
     return data.images || []
   } catch (error) {
-    console.error('Error fetching images:', error)
+    console.error('Error fetching images from:', apiUrl, error)
     // Return empty array instead of static images to see if API is working
     return []
   }

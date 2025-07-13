@@ -85,7 +85,16 @@ p { @apply text-base md:text-lg leading-relaxed text-grey-700; }
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  @apply bg-grey-600;
+  @apply bg-grey-900;
+}
+
+/* Hide scrollbar utility */
+.scrollbar-hide {
+  -ms-overflow-style: none;  /* Internet Explorer 10+ */
+  scrollbar-width: none;  /* Firefox */
+}
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;  /* Safari and Chrome */
 }
 
 /* Animations */

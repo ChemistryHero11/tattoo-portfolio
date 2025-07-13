@@ -41,7 +41,7 @@ const AboutSection = () => {
               <span className="text-sm uppercase tracking-[0.3em] text-grey-600 mb-6 block">
                 About the Artist
               </span>
-              <h2 className="text-4xl md:text-5xl lg:text-6xl font-light leading-[1.1] tracking-tight mb-8">
+              <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-light leading-[1.1] tracking-tight mb-6 md:mb-8">
                 {aboutData.title.split(' ').map((word, i) => (
                   <span key={i} className="block">
                     {word}

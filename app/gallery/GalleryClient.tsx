@@ -122,15 +122,15 @@ const GalleryClient = ({ initialImages }: GalleryClientProps) => {
 
             {/* Overlay with image info */}
             <motion.div
-              className="absolute bottom-10 left-10 z-10"
+              className="absolute bottom-6 left-6 md:bottom-10 md:left-10 z-10"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.3, duration: 0.8 }}
             >
-              <h3 className="font-cinzel text-2xl md:text-3xl text-off-white mb-2">
+              <h3 className="font-cinzel text-xl md:text-2xl lg:text-3xl text-off-white mb-1 md:mb-2">
                 {image.style}
               </h3>
-              <p className="text-off-white/70">{image.alt}</p>
+              <p className="text-off-white/70 text-sm md:text-base">{image.alt}</p>
             </motion.div>
 
             {/* Gradient overlay for better text readability */}
