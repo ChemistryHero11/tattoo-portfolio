@@ -64,15 +64,19 @@ const placeholderImages = [
 // GET /api/images - Return uploaded images from Cloudinary or placeholders
 export async function GET() {
   try {
+    console.log('[API Route] Fetching images...')
+    
     // Try to fetch images from Cloudinary first
     const cloudinaryImages = await fetchCloudinaryImages()
+    console.log('[API Route] Cloudinary images:', cloudinaryImages.length)
     
     // Use Cloudinary images if available, otherwise use placeholders
     const images = cloudinaryImages.length > 0 ? cloudinaryImages : placeholderImages
+    console.log('[API Route] Total images to return:', images.length)
     
     return NextResponse.json({ images })
   } catch (error) {
-    console.error('Error fetching images:', error)
+    console.error('[API Route] Error fetching images:', error)
     return NextResponse.json({ error: 'Failed to fetch images' }, { status: 500 })
   }
 }

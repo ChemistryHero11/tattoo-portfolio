@@ -34,10 +34,10 @@ export async function fetchCloudinaryImages(): Promise<CloudinaryImage[]> {
     // Filter out sample images and transform to our format
     const tattooImages = result.resources
       .filter((resource: any) => {
-        // Only include images from portfolio folder or with tattoo-related names
+        // Only include images from tattoo-portfolio folder or with tattoo-related names
         const publicId = resource.public_id?.toLowerCase() || ''
         const folder = resource.folder || ''
-        return folder === 'portfolio' || 
+        return folder === 'tattoo-portfolio' || 
                (!publicId.includes('sample') && !publicId.includes('logo'))
       })
       .map((resource: any, index: number) => ({

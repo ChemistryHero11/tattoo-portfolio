@@ -50,6 +50,10 @@ const userImages: CloudinaryImage[] = []
 
 // Server-side function to get images from the API route
 export async function getCloudinaryImages(): Promise<CloudinaryImage[]> {
+  console.log('getCloudinaryImages called')
+  console.log('VERCEL_URL:', process.env.VERCEL_URL)
+  console.log('NEXT_PUBLIC_SITE_URL:', process.env.NEXT_PUBLIC_SITE_URL)
+  
   // In production, we need to use absolute URL for server-side fetches
   // Try to get the URL from environment variable first
   let apiUrl = '/api/images'

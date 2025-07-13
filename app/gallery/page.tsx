@@ -11,6 +11,7 @@ export const metadata: Metadata = {
 export default async function GalleryPage() {
   // Server-side fetch images from Cloudinary
   const images = await getCloudinaryImages()
+  console.log('Gallery page - fetched images:', images.length)
 
   return (
     <div className="page-transition min-h-screen">
