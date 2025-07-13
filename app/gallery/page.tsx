@@ -1,4 +1,5 @@
 import { Metadata } from 'next'
+import { Suspense } from 'react'
 import GalleryClient from './GalleryClient'
 import { getCloudinaryImages } from '@/lib/cloudinary'
 
@@ -13,7 +14,9 @@ export default async function GalleryPage() {
 
   return (
     <div className="page-transition min-h-screen">
-      <GalleryClient initialImages={images} />
+      <Suspense fallback={<div className="flex justify-center items-center min-h-screen"><div className="spinner"></div></div>}>
+        <GalleryClient initialImages={images} />
+      </Suspense>
     </div>
   )
 }
